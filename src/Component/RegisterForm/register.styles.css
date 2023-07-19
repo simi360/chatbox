@@ -1,0 +1,40 @@
+
+.registershape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -70px;
+    top: -170px;
+}
+.registershape + .registershape{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    top: 490px;
+    left: 300px;
+}
+
+.registerformcontainer{
+    height: 700px;
+    width: 400px;
+}
+
+@media screen and (max-width: 600px) {
+    .formcontainer {
+        width: 300px;
+    }
+    .registershape:first-child{
+        background: linear-gradient(
+            #1845ad,
+            #23a2f6
+        );
+        left: -70px;
+        top: -105px;
+    }
+    .social div{
+        width: 100px;
+    }
+  }

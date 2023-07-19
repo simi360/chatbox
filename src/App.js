@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+
+import Navigation from './Routes/Navigation/navigation.route';
+import Home from './Routes/Home/home.route';
+import { WrappedRegisterComponent, WrappedSignInComponent } from './Routes/Authentication/authentication.route';
+import Chat from './Routes/Chat/chat.route';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Routes>
+        <Route path='/' element={<Navigation/>}>
+          <Route index element={<Home/>}/>
+          <Route path='auth' element={<WrappedSignInComponent/>} />
+          <Route path='register' element={<WrappedRegisterComponent/>}  />
+          <Route path='userChatbox' element={<Chat />} />
+        </Route>
+      </Routes>
   );
 }
 

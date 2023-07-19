@@ -1,0 +1,41 @@
+.homeContainer{
+    height: 400px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+
+.homeContainer img{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    transform : translate(0%, 25%);
+}
+
+.homeContainer h1{
+    position: relative;
+    transform : translate(0%, -50%);
+}
+
+.homePara {
+    transform: translate(0%, 50%);
+    position: relative;
+}
+
+.homePara a {
+    color: burlywood;
+}
+
+@media screen and (max-width: 600px) {
+    .homeContainer{
+        width: 300px;
+    }
+  }

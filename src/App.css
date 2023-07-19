@@ -1,16 +1,21 @@
-.App {
-  text-align: center;
+.navContainer{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border: .1rem solid;
+  color: white;
+  background-color: #282c34;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logoContainer:hover{
+  animation-name: bounce;
+  animation-duration: .7s;
+  animation-direction: reverse;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.userNavContainer{
+  cursor: pointer;
 }
 
 .App-header {
@@ -24,15 +29,15 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes bounce {
   from {
-    transform: rotate(0deg);
+    transform: translateY(0%);
   }
   to {
-    transform: rotate(360deg);
+    transform: translateY(30%)
   }
+}
+
+h1{
+  padding-top: 40px;
 }
