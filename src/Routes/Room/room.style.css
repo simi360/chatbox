@@ -1,0 +1,39 @@
+.roomcontainer {
+    height: 300px;
+}
+
+.roomcontainer label{
+    text-align: center;
+}
+
+.roomcontainer input {
+    width: 22%;
+    position: relative;
+    transform: translate(130%,30%);
+    font-size: 2rem;
+}
+
+::placeholder{
+    color: #5a5353;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 0.5;
+
+}
+
+.roomShape:first-child{
+    top: 10px;
+}
+
+.roomShape + .roomShape{
+    top: 300px;
+}
+
+@media screen and (max-width: 600px) {
+    .roomcontainer input{
+        font-size: 1.3rem;
+    }
+}

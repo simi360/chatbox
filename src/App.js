@@ -6,6 +6,7 @@ import Navigation from './Routes/Navigation/navigation.route';
 import Home from './Routes/Home/home.route';
 import { WrappedRegisterComponent, WrappedSignInComponent } from './Routes/Authentication/authentication.route';
 import Chat from './Routes/Chat/chat.route';
+import Room from './Routes/Room/room.route';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path='auth' element={<WrappedSignInComponent/>} />
           <Route path='register' element={<WrappedRegisterComponent/>}  />
           <Route path='userChatbox' element={<Chat />} />
+          <Route path='room' element={<Room/>} />
         </Route>
       </Routes>
   );

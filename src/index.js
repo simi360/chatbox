@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 
 import { UserProvider } from './Context/user.context';
 import { InputMessageProvider } from './Context/inputMessage.context';
+import { UserRoomProvider } from './Context/userRoom.context';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,9 +15,11 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <UserProvider>
-        <InputMessageProvider>
-          <App />   
-        </InputMessageProvider>
+        <UserRoomProvider>
+          <InputMessageProvider>
+            <App />   
+          </InputMessageProvider>
+        </UserRoomProvider>
       </UserProvider>
     </BrowserRouter>
   </React.StrictMode>

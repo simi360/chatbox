@@ -40,7 +40,7 @@ const SignInForm = () => {
         { err && <div className="errorMessage">
             <p>User Please check email/password combination again</p>
          </div>}
-        <div className="signinboxcontainer"> 
+        <div className="boxcontainer"> 
 
 
             <div className="shape"></div>

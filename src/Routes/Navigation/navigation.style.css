@@ -36,6 +36,10 @@
     padding-right: 20px;
   }
 
+  .currentRoomContainer {
+    font-weight: bold;
+  }
+
   @keyframes bounce {
     from {
       transform: translateY(0%);

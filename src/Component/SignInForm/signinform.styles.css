@@ -1,4 +1,4 @@
-.signinboxcontainer{
+.boxcontainer{
     width: 430px;
     height: 520px;
     position: absolute;
@@ -6,7 +6,7 @@
     left: 50%;
     top: 50%;
 }
-.signinboxcontainer .shape{
+.boxcontainer .shape{
     height: 200px;
     width: 200px;
     position: absolute;

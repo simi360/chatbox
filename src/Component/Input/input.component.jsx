@@ -2,8 +2,10 @@ import React, {Fragment, useContext, useRef} from "react";
 import './input.styles.css';
 import { InputMessageContext } from "../../Context/inputMessage.context";
 
+
 const Input = ({scroll}) => {
     const {onMessageSubmit} = useContext(InputMessageContext);
+
     const inputElement = useRef();
 
 

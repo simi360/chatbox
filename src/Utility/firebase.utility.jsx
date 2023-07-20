@@ -1,3 +1,4 @@
+
 import { initializeApp } from 'firebase/app';
 //Autherization
 import { getAuth, 
@@ -64,6 +65,7 @@ const firebaseConfig = {
 
   //Signing Out: ASYNC
   export const userSignOut = async () => {
+
     return await signOut(auth);
   }
 
@@ -101,7 +103,7 @@ const firebaseConfig = {
     return userDocRef;
   }
 
-  export const createMessageDoc = async (message, currentUser) => {
+  export const createMessageDoc = async (message, currentUser, currentRoom) => {
     if (message.trim() === ''){
       alert ('Enter valid Message');
       return;
@@ -115,6 +117,7 @@ const firebaseConfig = {
         name: (displayName === null ? email : displayName),
         avatar: (photoURL=== null ? "https://htmlcolorcodes.com/assets/images/colors/aqua-color-solid-background-1920x1080.png" : photoURL),
         createdAt: new Date(),
+        room: currentRoom,
         uid
       })
     } catch (error) {

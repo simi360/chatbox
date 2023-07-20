@@ -57,7 +57,7 @@ const Register = () => {
              <p>{err}</p>
             </div>}
 
-        <div className="signinboxcontainer"> 
+        <div className="boxcontainer"> 
 
             <div className="shape registershape"></div>
             <div className="shape registershape"></div>

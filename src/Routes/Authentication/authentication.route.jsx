@@ -15,7 +15,7 @@ const UserAuthentication = (MyComponent) => {
           <Fragment>
             {
               currentUser ?
-              <Navigate to='/userChatbox' /> :
+              <Navigate to='/room' /> :
               <MyComponent /> 
             }
           </Fragment>
